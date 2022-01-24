@@ -64,6 +64,23 @@ The purpose of the election audit and analysis is to count all submitted votes a
 
 - ### Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
 
+    - Charles Casper Stockham received 23% of the votes with 85,213
+    - Diana DeGette received 73% of the votes with 272,892
+    - Raymon Anthony Doane received 3.1% of the votes with 11,606  
+
+    ###### iterate each candidate in dictionary to calculatae percentage and compare total votes to determine winner
+    ```python
+    for candidate_name in candidate_votes:
+
+        votes = candidate_votes.get(candidate_name)
+        vote_percentage = float(votes) / float(total_votes) * 100
+
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes
+            winning_candidate = candidate_name
+            winning_percentage = vote_percentage
+    ```
+
 - ### Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
 
 
