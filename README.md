@@ -14,15 +14,12 @@ The purpose of the election audit and analysis is to count all submitted votes a
     369,711 total votes were cast in the congressional election
 
     ###### each row in the file represented a vote
+    
     ```python
     total_votes = 0
 
-    # omitted lines of code
-
     with open(file_to_load) as election_data:
         reader = csv.reader(election_data)
-
-        # omitted lines
 
         for row in reader:
 
@@ -30,6 +27,28 @@ The purpose of the election audit and analysis is to count all submitted votes a
     ```
 
 - ### Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
+
+    - Jefferson county made up 10.5% of total votes with 85,213
+    - Denver county made up 82.8% of total votes with 306,055
+    - Arapahoe county made up 6.7% of total votes with 24,801  
+  
+  
+    ###### store county:count in a dictionary
+
+    ```python
+    for row in reader:
+        
+        if county_name not in counties:
+
+            # 4b: Add the existing county to the list of counties.
+            counties.append(county_name)
+
+            # 4c: Begin tracking the county's vote count.
+            counties_votes[county_name] = 0
+
+        # 5: Add a vote to that county's vote count.
+        counties_votes[county_name] += 1    
+    ```
 
 - ### Which county had the largest number of votes?
 
