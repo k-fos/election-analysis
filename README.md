@@ -95,4 +95,4 @@ This script can be used to calculate the results of state elections and scale to
 Adding a state column to the import file and adjusting the code to calculate state totals per candidate would allow this script to be used for the presidential popular vote.  Additional analysis could be done to identify favorites in different areas of the country.
 
 ### Modification #2
-Changing the county column to a generic category column would expand the types of elections the script could be used.  For example, the category column could contain school districts and calculate the winner of a vote for a superintendent position.
+Changing the county column to a generic category column would expand the types of elections the script could be used.  For example, the category column could contain school districts and calculate the winner of a superintendent election.
