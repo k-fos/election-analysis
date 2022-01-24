@@ -65,7 +65,7 @@ The purpose of the election audit and analysis is to count all submitted votes a
 - ### Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
 
     - Charles Casper Stockham received 23% of the votes with 85,213
-    - Diana DeGette received 73% of the votes with 272,892
+    - Diana DeGette received 73.8% of the votes with 272,892
     - Raymon Anthony Doane received 3.1% of the votes with 11,606  
 
     ###### iterate each candidate in dictionary to calculatae percentage and compare total votes to determine winner
@@ -83,7 +83,7 @@ The purpose of the election audit and analysis is to count all submitted votes a
 
 - ### Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
 
-    Diana DeGette won the election with 272,892 votes which made up 73% of the total votes submitted
+    Diana DeGette won the election with 272,892 votes which made up 73.8% of the total votes submitted
 
 
 # Election-Audit Summary
