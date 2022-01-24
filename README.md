@@ -83,6 +83,8 @@ The purpose of the election audit and analysis is to count all submitted votes a
 
 - ### Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
 
+    Diana DeGette won the election with 272,892 votes which made up 73% of the total votes submitted
+
 
 # Election-Audit Summary
 
