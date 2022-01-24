@@ -3,6 +3,7 @@
 
 # Add our dependencies.
 import csv
+from distutils import text_file
 import os
 
 # Add a variable to load a file from a path.
@@ -100,9 +101,11 @@ with open(file_to_save, "w") as txt_file:
         county_vote_perct = float(votes) / float(total_votes) * 100
 
          # 6d: Print the county results to the terminal.
-        print(f"{county_name}: {county_vote_perct:.1f}% ({votes:,})")
+        county_result = f"{county_name}: {county_vote_perct:.1f}% ({votes:,})\n"
+        print(county_result, end="")
 
          # 6e: Save the county votes to a text file.
+        txt_file.write(county_result)
 
          # 6f: Write an if statement to determine the winning county and get its vote count.
         if (votes > largest_county_votes):
@@ -110,13 +113,15 @@ with open(file_to_save, "w") as txt_file:
             largest_county = county_name
 
     # 7: Print the county with the largest turnout to the terminal.
-    print(
+    largest_county_result = (
         f"\n-------------------------\n"
         f"Largest County Turnout: {largest_county}\n"
         f"-------------------------\n")
 
-    # 8: Save the county with the largest turnout to a text file.
+    print(largest_county_result)
 
+    # 8: Save the county with the largest turnout to a text file.
+    txt_file.write(largest_county_result)
 
     # Save the final candidate vote count to the text file.
     for candidate_name in candidate_votes:
