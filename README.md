@@ -7,17 +7,18 @@ The purpose of the election audit and analysis is to count all submitted votes a
 
 # Election-Audit Results
 
+![Results](Resources/analysis-terminal.png)
+
 - ### How many votes were cast in this congressional election?
 
     369,711 total votes were cast in the congressional election
 
-    ##### each row in the file represented a vote
+    ###### each row in the file represented a vote
     ```python
     total_votes = 0
 
     # omitted lines of code
 
-    # Read the csv and convert it into a list of dictionaries
     with open(file_to_load) as election_data:
         reader = csv.reader(election_data)
 
