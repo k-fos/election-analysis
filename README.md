@@ -7,17 +7,34 @@ The purpose of the election audit and analysis is to count all submitted votes a
 
 # Election-Audit Results
 
-- _How many votes were cast in this congressional election?_
+- ### How many votes were cast in this congressional election?
 
     369,711 total votes were cast in the congressional election
 
-- Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
+    ##### each row in the file represented a vote
+    ```python
+    total_votes = 0
 
-- Which county had the largest number of votes?
+    # omitted lines of code
 
-- Provide a breakdown of the number of votes and the percetnage of the total votes each candidate received.
+    # Read the csv and convert it into a list of dictionaries
+    with open(file_to_load) as election_data:
+        reader = csv.reader(election_data)
 
-- Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
+        # omitted lines
+
+        for row in reader:
+
+            total_votes = total_votes + 1
+    ```
+
+- ### Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
+
+- ### Which county had the largest number of votes?
+
+- ### Provide a breakdown of the number of votes and the percetnage of the total votes each candidate received.
+
+- ### Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
 
 
 # Election-Audit Summary
